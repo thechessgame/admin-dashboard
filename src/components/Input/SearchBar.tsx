@@ -22,7 +22,7 @@ function SearchBar({
           type="search"
           value={searchText}
           placeholder={placeholderText || "Search"}
-          onChange={(e) => updateSearchInput(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateSearchInput(e.target.value)}
           className="input input-sm input-bordered  w-full max-w-xs"
         />
       </div>

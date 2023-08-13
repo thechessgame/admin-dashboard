@@ -5,6 +5,9 @@ import App from "./App";
 import { Provider } from "react-redux";
 import SuspenseContent from "./containers/SuspenseContent";
 import store from "./app/store";
+import initializeApp from "./app/init";
+
+initializeApp();
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 

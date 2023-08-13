@@ -1,5 +1,5 @@
 import { redirect } from "react-router-dom";
-import Login from "../features/user/Login";
+import Login from "../features/auth/Login";
 
 function LoginPage() {
   return <Login />;
@@ -15,5 +15,5 @@ export async function action({ request }: { request: Request }) {
 
   // make api request to authenticate
 
-  return redirect("/login");
+  return redirect("/app");
 }

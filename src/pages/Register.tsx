@@ -1,4 +1,4 @@
-import Register from "../features/user/Register";
+import Register from "../features/auth/Register";
 import { redirect } from "react-router-dom";
 
 function RegisterPage() {
@@ -15,5 +15,5 @@ export async function action({ request }: { request: Request }) {
 
   // make api request to authenticate
 
-  return redirect("/login");
+  return redirect("/app");
 }

@@ -16,10 +16,9 @@ function ToogleInput({
   containerStyle: string;
   defaultValue: boolean;
   placeholder: string;
-  updateFormValue:  ({ updateType, value }: { updateType: string; value: boolean }) => void;
+  updateFormValue: ({ updateType, value }: { updateType: string; value: boolean }) => void;
   updateType: string;
 }) {
-
   const [value, setValue] = useState<boolean>(defaultValue);
 
   const updateToogleValue = () => {
@@ -31,7 +30,12 @@ function ToogleInput({
     <div className={`form-control w-full ${containerStyle}`}>
       <label className="label cursor-pointer">
         <span className={"label-text text-base-content " + labelStyle}>{labelTitle}</span>
-        <input type="checkbox" className="toggle" checked={value} onChange={(e) => updateToogleValue()} />
+        <input
+          type="checkbox"
+          className="toggle"
+          checked={value}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateToogleValue()}
+        />
       </label>
     </div>
   );

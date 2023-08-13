@@ -35,7 +35,7 @@ function TextAreaInput({
         value={value}
         className="textarea textarea-bordered w-full"
         placeholder={placeholder || ""}
-        onChange={(e) => updateInputValue(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => updateInputValue(e.target.value)}
       ></textarea>
     </div>
   );

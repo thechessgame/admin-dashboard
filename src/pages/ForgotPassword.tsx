@@ -1,4 +1,4 @@
-import ForgotPassword from "../features/user/ForgotPassword";
+import ForgotPassword from "../features/auth/ForgotPassword";
 import { redirect } from "react-router-dom";
 
 function ForgotPasswordPage() {

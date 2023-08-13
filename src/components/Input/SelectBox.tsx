@@ -46,7 +46,11 @@ function SelectBox(props: {
         </div>
       </label>
 
-      <select className="select select-bordered w-full" value={value} onChange={(e) => updateValue(e.target.value)}>
+      <select
+        className="select select-bordered w-full"
+        value={value}
+        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => updateValue(e.target.value)}
+      >
         <option disabled value="PLACEHOLDER">
           {placeholder}
         </option>

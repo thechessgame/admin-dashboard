@@ -37,7 +37,7 @@ function InputText({
         type={type || "text"}
         value={value}
         placeholder={placeholder || ""}
-        onChange={(e) => updateInputValue(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => updateInputValue(e.target.value)}
         name={name}
         className="input  input-bordered w-full "
       />
