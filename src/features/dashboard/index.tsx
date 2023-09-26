@@ -41,32 +41,7 @@ function Dashboard() {
     );
   };
 
-  return (
-    <>
-      <DashboardTopBar updateDashboardPeriod={updateDashboardPeriod} />
-
-      <div className="grid lg:grid-cols-4 mt-2 md:grid-cols-2 grid-cols-1 gap-6">
-        {statsData.map((d, k) => {
-          return <DashboardStats key={k} {...d} colorIndex={k} />;
-        })}
-      </div>
-
-      <div className="grid lg:grid-cols-2 mt-4 grid-cols-1 gap-6">
-        <LineChart />
-        <BarChart />
-      </div>
-
-      <div className="grid lg:grid-cols-2 mt-10 grid-cols-1 gap-6">
-        <AmountStats />
-        <PageStats />
-      </div>
-
-      <div className="grid lg:grid-cols-2 mt-4 grid-cols-1 gap-6">
-        <UserChannels />
-        <DoughnutChart />
-      </div>
-    </>
-  );
+  return <></>;
 }
 
 export default Dashboard;
